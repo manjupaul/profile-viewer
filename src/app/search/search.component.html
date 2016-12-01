@@ -1,0 +1,22 @@
+
+<div class ="panel panel-default">
+    <div class="panel-heading">
+      <h2>Github search profile</h2>
+      <input type="text" [(ngModel)]="userName" placeholder="Enter the Names " />
+      <button class="btn btn-primary" type="button"(click)="search()" >Search</button>
+      <div class="row" >
+            <div class="col-md-6panel">
+             <h2>{{profile?.login|uppercase}}</h2>
+                  <img class="img-responsive" [src]="profile?.avatar_url" width="204" height="236"/>
+                    <p id="uname">User Name:{{profile?.login}}</p>
+                    <p id="loc">Location:{{profile?.location}}</p>
+                    <a href={{profile?.blog}}></a>
+              </div>
+            <div class="col-md-6">hello</div>
+
+          </div>
+    </div>
+
+      </div>
+
+
